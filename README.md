@@ -16,3 +16,7 @@ docker-compose run --rm app sh -c "python manage.py test"
 ## Create a core app
 docker-compose run --rm app sh -c "python manage.py startapp core"
 remove tests.py and views.py files
+
+## Command to create superuser
+docker-compose run --rm app sh -c "python manage.py createsuperuser"
+credentials: email: gautier.tiehoule@gmail password: Papatchi1994
