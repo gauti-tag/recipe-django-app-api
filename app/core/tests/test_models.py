@@ -1,8 +1,8 @@
 """
 Tests for models
 """
-from django.test import TestCase
-from django.contrib.auth import get_user_model
+from django.test import TestCase #Base class for tests
+from django.contrib.auth import get_user_model # get_user_model (helper function to get the default user model)
 
 
 class ModelTests(TestCase):

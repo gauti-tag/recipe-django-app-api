@@ -17,6 +17,15 @@ docker-compose run --rm app sh -c "python manage.py test"
 docker-compose run --rm app sh -c "python manage.py startapp core"
 remove tests.py and views.py files
 
+## Generate Migrations for all define models
+python manage.py makemigrations
+
+## Applying Migrations
+python manage.py migrate
+
 ## Command to create superuser
 docker-compose run --rm app sh -c "python manage.py createsuperuser"
-credentials: email: gautier.tiehoule@gmail password: Papatchi1994
+credentials: email: gautier.tiehoule@gmail.com password: Papatchi1994
+
+## Install Auto API Documentation - DRF (Document Rest Framework)
+library name: drf-spectacular
