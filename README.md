@@ -29,3 +29,12 @@ credentials: email: gautier.tiehoule@gmail.com password: Papatchi1994
 
 ## Install Auto API Documentation - DRF (Document Rest Framework)
 library name: drf-spectacular
+
+## Create User App
+docker-compose run --rm app sh -c "python manage.py startapp user"
+- remove migrations folder
+- remove admin.py
+- remove models.py
+- remove tests.py
+- create new folder 'tests'
+- create new file '__init__.py' inside the 'tests' folder
