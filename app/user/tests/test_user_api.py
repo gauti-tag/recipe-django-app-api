@@ -34,8 +34,7 @@ class PublicUserApiTests(TestCase):
 
         user = get_user_model().objects.get(email= payload['email'])
         self.assertTrue(user.check_password(payload['password'])) # Confirm is the password is correct
-
-        self.assertNoIn('password', res.data) # password is not in the data response
+        self.assertNotIn('password', res.data) # password is not in the data response
 
     def test_user_width_email_exists_error(self):
         """ test error returned if user email exists"""
